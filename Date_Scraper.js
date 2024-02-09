@@ -18,7 +18,7 @@ function get() {
         line += '\"empty\"';
     }
     console.log(line);
-    results += line
+    results += line + '\n'
     num += 1;
     document.getElementById('studentNextBtn').click();
     return true;

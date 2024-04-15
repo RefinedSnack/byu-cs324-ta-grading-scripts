@@ -29,8 +29,13 @@ def merge_csv(csv1_path, csv2_path, output_csv_path):
         csv_writer.writerows(merged_data)
 
 if __name__ == "__main__":
-    csv1_path = 'C-S 324-student-list.csv'
-    csv2_path = 'Submission_Dates.csv'
-    output_csv_path = 'merged_data.csv'
+    csv1_path = r'C-S 324-student-list.csv'
+    # csv2_path = r'C:\Users\walte\Documents\cs324\dev\Shell_Lab_2_-_Signals_and_Job_Control.csv'
+    # csv2_path = r'C:\Users\walte\Documents\cs324\dev\Shell_Lab_1_-_Pipelines_and_Redirection.csv'
+    # csv2_path = r'C:\Users\walte\Documents\cs324\dev\HW_4_-_Signals.csv'
+    # csv2_path = r'C:\Users\walte\Documents\cs324\dev\HTTP_Proxy_Lab_1_-_Threadpool.csv'
+    csv2_path = r'C:\Users\walte\Documents\cs324\dev\HTTP_Proxy_Lab_2_-_I_O_Multiplexing.csv'
+    # csv2_path = r'C:\Users\walte\Documents\cs324\dev\Socket_Treasure_Hunt.csv'
+    output_csv_path = r'merged_data.csv'
 
     merge_csv(csv1_path, csv2_path, output_csv_path)

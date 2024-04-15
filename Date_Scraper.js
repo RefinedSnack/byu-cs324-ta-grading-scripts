@@ -15,7 +15,7 @@ function get() {
         line += '\"' + submissionToggleElement.innerText + '\"';
     }
     else {
-        line += '\"empty\"';
+        line += '\"\"';
     }
     console.log(line);
     results += line + '\n'
@@ -44,6 +44,19 @@ function saveStringToFile(content, fileName) {
 }
 
 function run(times) {
+    var docName = document.querySelector('.selectedAssignment');
+
+    // Check if the element exists
+    if (docName !== null) {
+        // Get the text content of the element and replace spaces with underscores
+        var assignmentName = docName.textContent.trim().replace(/\s/g, '_');
+    } else {
+        // Set the variable to 'Submission_Dates' if the element is not found
+        var assignmentName = 'Submission_Dates';
+    }
+
+    // Add .csv to the end of assignmentName
+    assignmentName += '.csv';
     num = 1;
     results = 'roleNum,Name,Date\n'
     try {
@@ -56,7 +69,7 @@ function run(times) {
     catch (error) {
         console.log(error)
     }
-    saveStringToFile(results, "Submission_Dates.csv")
+    saveStringToFile(results, assignmentName)
 }
 
 // Set to a big number because it will crash

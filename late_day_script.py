@@ -38,14 +38,14 @@ if __name__ == "__main__":
         "hw3": datetime(2024, 1, 27).date(),
         "hw4": datetime(2024, 2, 9).date(),
         "hw5": datetime(2024, 3, 1).date(),
-        "hw6": datetime(2024, 3, 18).date(),
+        "hw6": datetime(2024, 3, 20).date(),
         "hw7": datetime(2024, 4, 5).date(),
         "hw8": datetime(2024, 4, 17).date(),
-        "lab1": datetime(2024, 1, 5).date(),
+        "lab1": datetime(2024, 2, 5).date(),
         "lab2": datetime(2024, 2, 16).date(),
         "lab3": datetime(2024, 3, 12).date(),
         "lab4": datetime(2024, 3, 29).date(),
-        "lab5": datetime(2024, 4, 12).date(),
+        "lab5": datetime(2024, 4, 17).date(),
     }
     # Create and open a text file for writing
     with open('output.txt', 'w') as textfile:
